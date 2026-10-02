@@ -1,0 +1,194 @@
+.anz-worldline-payment-form-wrapper {
+	margin: 1em 0;
+}
+
+.anz-worldline-payment-form .anz-worldline-field {
+	margin-bottom: 20px;
+	max-width: 606PX;
+}
+
+.anz-worldline-payment-form .anz-worldline-field input {
+	display: block; width: 100%; padding: .375rem .75rem; font-size: 1rem; line-height: 1.5; color: #495057; background-color: #fff; background-image: none; background-clip: padding-box; border: 1px solid #ced4da; border-radius: .25rem; transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s; padding: 19px 28px; border-radius: 8px; height: 66px; border: 1px solid #283c52; color: #595959; -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25); box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25)
+}
+
+.anz-worldline-payment-form-wrapper .anz-worldline-field input:hover, .payments .anz-worldline-payment-form-wrapper .pap-form-controls input:focus { box-shadow: none; outline: none; }
+
+
+.anz-worldline-payment-form .anz-worldline-field label {
+	display: block;
+	margin-bottom: 0.25em;
+	font-weight: 600;
+}
+
+.anz-worldline-payment-form .anz-worldline-field input.wide,
+.anz-worldline-payment-form .anz-worldline-field input[type="text"],
+.anz-worldline-payment-form .anz-worldline-field input[type="email"],
+.anz-worldline-payment-form .anz-worldline-field input[type="number"] {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.anz-worldline-payment-form .anz-worldline-submit {
+	margin-top: 1.25em;
+}
+
+.anz-worldline-payment-form .anz-worldline-btn {
+	cursor: pointer;
+	border: none;
+	font-family: 'Mulish', sans-serif;
+}
+
+
+.anz-worldline-payment-form .anz-worldline-btn:disabled {
+	opacity: 0.7;
+	cursor: not-allowed;
+}
+
+.anz-worldline-payment-form .anz-worldline-submit {
+	align-items: center;
+	gap: 0.75em;
+}
+
+.anz-worldline-loader {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border: 2px solid rgba(0, 0, 0, 0.15);
+	border-top-color: #2271b1;
+	border-radius: 50%;
+	animation: anz-worldline-spin 0.7s linear infinite;
+}
+
+@keyframes anz-worldline-spin {
+	to { transform: rotate(360deg); }
+}
+
+.anz-worldline-message {
+	margin-top: 1em;
+	padding: 0.75em;
+	border-radius: 3px;
+}
+
+.anz-worldline-message.anz-worldline-error {
+	background: #fcf0f1;
+	border: 1px solid #d63638;
+	color: #3c434a;
+}
+
+/* Result page */
+.anz-worldline-result-page {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, sans-serif;
+	padding: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	box-sizing: border-box;
+}
+
+.anz-worldline-result-box {
+	max-width: 420px;
+	padding: 2em;
+	border-radius: 6px;
+	box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+	border: 1px solid #ddd;
+}
+
+.anz-worldline-result-box.anz-worldline-success {
+	border-color: #00a32a;
+	background: #f0f9f0;
+}
+
+.anz-worldline-result-box.anz-worldline-failure {
+	border-color: #d63638;
+	background: #fcf0f1;
+}
+
+.anz-worldline-result-box h2 {
+	margin-top: 0;
+	font-size: 1.35em;
+}
+
+.anz-worldline-result-message {
+	margin: 1em 0;
+}
+
+.anz-worldline-result-invoice,
+.anz-worldline-result-details {
+	font-size: 0.95em;
+	color: #50575e;
+	margin: 0.5em 0;
+}
+
+.anz-worldline-result-back {
+	margin-top: 1.5em;
+	margin-bottom: 0;
+}
+
+.anz-worldline-result-back a {
+	color: #2271b1;
+}
+
+/* custom css as per live */
+.anz-payments-demo .terms-condition {padding: 54px 64px 0;}
+.anz-payments-demo .entry-title { text-transform: uppercase; }
+.anz-payments-demo .terms-condition .inner-terms { border: none; max-width: 100%; width: 100%; }
+.anz-payments-demo .terms-condition .hentry { max-width: 100%; border-bottom: 1px solid #dbdbdb; }
+.anz-payments-demo .anz-worldline-help-text { margin: 20px 0 33px;  }
+.anz-payments-demo .anz-worldline-help-text em { font-size: 16px; font-style: normal; color: #595959; line-height: 30px; }
+.anz-worldline-payment-form-wrapper {
+    margin: 44px 0 60px 0;
+}
+
+.anz-worldline-payment-form-wrapper .anz-worldline-field {
+    margin-bottom: 20px;
+    max-width: 606PX
+}
+
+.anz-worldline-payment-form-wrapper .anz-worldline-field input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    padding: 19px 28px;
+    border-radius: 8px;
+    height: 66px;
+    border: 1px solid #283c52;
+    color: #595959;
+    -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, .25);
+        font-family: 'Mulish', sans-serif;
+}
+
+.anz-worldline-payment-form-wrapper .anz-worldline-field input:hover, .payments .anz-worldline-payment-form-wrapper .anz-worldline-field input:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+@media(max-width: 991px){
+	.anz-worldline-payment-form-wrapper {margin: 24px 0 40px 0;} 
+	.anz-worldline-payment-form-wrapper .anz-worldline-field input {height: 45px; padding: 10px 25px;}
+}
+
+@media(max-width:767px) {
+    .client-mn-blk .sm-shortlisted-items .owl-carousel {padding-right: 0px; padding-top: 7px;} 
+    .anz-worldline-payment-form-wrapper .anz-worldline-field {max-width: 100%;}
+}
+
+@media(max-width: 479px){
+	.anz-payments-demo .pap-form-actions {text-align: center;}
+	p.anz-worldline-submit {
+    text-align: center;
+}
+.anz-payments-demo .terms-condition {
+    padding: 0 15px;
+}
+}

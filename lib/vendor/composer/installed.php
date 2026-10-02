@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'name' => '__root__',
+        'pretty_version' => '1.0.0+no-version-set',
+        'version' => '1.0.0.0',
+        'reference' => NULL,
+        'type' => 'library',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'dev' => true,
+    ),
+    'versions' => array(
+        '__root__' => array(
+            'pretty_version' => '1.0.0+no-version-set',
+            'version' => '1.0.0.0',
+            'reference' => NULL,
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'online-payments/sdk-php' => array(
+            'pretty_version' => '8.3.0',
+            'version' => '8.3.0.0',
+            'reference' => 'a892be4812a31a9b91ada2d5a3b460f80fdf65e3',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../online-payments/sdk-php',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'robtimus/multipart' => array(
+            'pretty_version' => '1.0.1',
+            'version' => '1.0.1.0',
+            'reference' => '98977024f1261185d139c9df0aaecbf28cb131f4',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../robtimus/multipart',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+    ),
+);

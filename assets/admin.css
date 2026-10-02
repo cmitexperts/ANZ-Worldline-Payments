@@ -1,0 +1,34 @@
+.anz-worldline-admin input.regular-text {
+	max-width: 400px;
+}
+
+.anz-worldline-admin input[type="password"] {
+	max-width: 400px;
+}
+
+.anz-worldline-admin code {
+	background: #f0f0f1;
+	padding: 2px 6px;
+	border-radius: 3px;
+}
+
+/* Payments list */
+.anz-worldline-payments-list .wp-list-table { margin-top: 12px; }
+.anz-worldline-payments-list .tablenav.bottom { margin-top: 12px; }
+.anz-worldline-status {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+}
+.anz-worldline-status-success { background: #00a32a; color: #fff; }
+.anz-worldline-status-failed { background: #d63638; color: #fff; }
+
+.anz-worldline-mode {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 3px;
+	font-size: 12px;
+}
+.anz-worldline-mode-test { background: #dcdcde; color: #50575e; }
+.anz-worldline-mode-live { background: #00a32a; color: #fff; }
