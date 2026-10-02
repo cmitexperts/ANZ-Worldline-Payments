@@ -139,7 +139,9 @@ class ANZ_Worldline_Shortcode {
 					<p class="anz-worldline-field">
 						<input type="number" id="anz-worldline-amount" name="amount" required min="1" step="0.01" class="wide" placeholder="<?php esc_html_e( 'Amount', 'anz-worldline-payments' ); ?> (<?php echo esc_html( $atts['currency'] ); ?>)" pattern="^\d+(?:\.\d{1,2})?$" />
 						<div class="anz-worldline-help-text">
+							<!-- Surcharge notice disabled 02/10/26
 							<em>* A 3% credit card surcharge will automatically be added to your transaction</em>
+							-->
 							<!-- edited by YM 26/3/26 <br/><em>** Amex is NOT accepted</em> -->
 						</div><!-- /.pap-help-text -->
 					</p>
@@ -202,10 +204,12 @@ class ANZ_Worldline_Shortcode {
 			wp_send_json_error( array( 'message' => __( 'Please fill all fields with valid values.', 'anz-worldline-payments' ) ) );
 		}
 
+		// Surcharge calculation disabled 02/10/26 — charge the entered amount only.
 		// 3% credit card surcharge (same as live site).
-		$surcharge    = round( $amount * 0.03, 2 );
-		$total        = $amount + $surcharge;
-		$amount_cents = (int) round( $total * 100 );
+		// $surcharge    = round( $amount * 0.03, 2 );
+		// $total        = $amount + $surcharge;
+		// $amount_cents = (int) round( $total * 100 );
+		$amount_cents         = (int) round( $amount * 100 );
 		$invoice_amount_cents = (int) round( $amount * 100 );
 
 		if ( $amount_cents <= 0 ) {
